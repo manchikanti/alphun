@@ -2,11 +2,10 @@
 <html>
 
 <head>
-    <title>Alphun - Fun with alphabets and numbers</title>
+    <title>Alphun - Teach alphabets</title>
     <meta charset="utf-8">
-    <meta name="description" content="Simple site to learn alphabets and numbers in various languages. And some fun.
-    Sit with your children and teach them alphabets and numbers.">
-    <meta name="keywords" content="alphabets, numbers">
+    <meta name="description" content="Teach alphabets in various languages.">
+    <meta name="keywords" content="alphabets, teach alphabets">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="ext/bootstrap/css/bootstrap.min.css">
@@ -27,27 +26,28 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="alphabets.html">Teach Alphabets</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="alphabets.html">Teach Alphabets</a></li>
                     <li><a href="numbers.html">Teach Numbers</a></li>
                 </ul>
+                <select name="language" id="language">
+                    <option value="en_u">English Upper</option>
+                    <option value="en_l">English Lower</option>
+                </select>
             </div>
-            <!--/.nav-collapse -->
         </div>
     </nav>
-    <div class="container">
-        <p>
-            Created alphun to sit with kids and teach them alphabets and basic numbers.. This can be improved like by adding more languages, phonetics, sounds, various colors to alphabet and relavent image. </p>
-        <p>
-            If you are UI / UX expert please feel to improve this.
-            <a href="https://github.com/manchikanti/alphun">https://github.com/manchikanti/alphun</a>
-        </p>
-        <p>
-            If you want to contribute to any language please create an issue at <a href="https://github.com/manchikanti/alphun/issues">https://github.com/manchikanti/alphun/issues</a></p>
+    <div class="container" id="mainContainer">
+        <div class="row" id="msg"></div>
+        <div class="col-lg-6" id="alphabet">
+        </div>
+        <div class="col-lg-6" id="word">
+        </div>
     </div>
     <script src="ext/jquery/js/jquery.js"></script>
     <script src="ext/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/site.js"></script>
+    <script src="js/alphabets.js"></script>
 </body>
 
 </html>
