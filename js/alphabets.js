@@ -17,7 +17,10 @@
             alphun.activeIndex = -1;
             handleRight();
         })
-        .error(function() { $("#msg").html("error, not available for this language yet.."); });
+        .error(function(e) {
+            $("#msg").html("error, not available for this language yet..");
+            console.log(e);
+        });
 
     $('#language').on("change", function(e) {
         alphun.handleLanguageChange(e);
